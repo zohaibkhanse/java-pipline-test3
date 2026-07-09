@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Pull code from GitHub (update repo URL & branch)
-                git branch: 'main', url: 'https://github.com/your-org/your-repo.git'
+                git branch: 'main', url: 'https://github.com/zohaibkhanse/java-pipline-test3.git',
+                credentialsId: 'github-creds'
             }
         }
 
